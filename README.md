@@ -1,4 +1,4 @@
-# Operational Efficiency Dashboard – Retail Store (March 2024)
+# Operational Efficiency Dashboard – Retail Store
 
 This is a solo project developed to analyze and visualize key operational metrics for a retail store using Python and Power BI. The goal of this project was to identify potential areas for improvement in operational performance by focusing on critical KPIs such as order processing time, customer wait time, cost per order, order accuracy, and inventory availability.
 
