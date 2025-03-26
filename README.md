@@ -1,48 +1,84 @@
 # Operational Efficiency Dashboard – Retail Store
 
-This is a solo project developed to analyze and visualize key operational metrics for a retail store using Python and Power BI. The goal of this project was to identify potential areas for improvement in operational performance by focusing on critical KPIs such as order processing time, customer wait time, cost per order, order accuracy, and inventory availability.
+## Project Overview
+
+This project focuses on analyzing and improving operational performance in a retail store using business analytics. It includes data cleaning using Python and the development of an interactive Power BI dashboard. The goal is to help decision-makers monitor KPIs and optimize internal processes.
 
 ---
 
-## Project Objectives
+## Tools & Technologies Used
 
-- Analyze operational performance and identify inefficiencies
-- Apply business analyst techniques to real-world data
-- Develop an interactive dashboard to support data-driven decisions
-- Strengthen skills in data cleaning, visualization, and storytelling
-
----
-
-## Tools and Technologies
-
-- **Python (pandas)**: Data cleaning and preparation
-- **Power BI**: Interactive dashboard creation and visualization
-- **Microsoft Excel**: Dataset inspection and structuring
+- Python (pandas, openpyxl)
+- Power BI
+- Microsoft Excel
+- GitHub
 
 ---
 
 ## Dashboard Features
 
-- **KPI Cards**: Show average order processing time, customer wait time, and cost per order
-- **Bar Chart**: Displays employee-wise processing time for performance comparison
-- **Pie Chart**: Visualizes the proportion of accurate versus inaccurate orders
-- **Donut Chart**: Illustrates stock availability for operational monitoring
-- **Slicers**: Enable dynamic filtering by customer type, product category, and employee
+The Power BI dashboard includes the following components:
+
+- **KPI Cards**
+  - Average Order Processing Time (in minutes)
+  - Average Customer Wait Time (specific to walk-in customers)
+  - Average Cost per Order
+
+- **Bar Chart**
+  - Average order processing time per employee
+
+- **Pie Charts**
+  - Distribution of order accuracy (Accurate vs. Inaccurate)
+  - Stock availability (Yes vs. No)
+
+- **Slicers**
+  - Filters for Customer Type, Product Category, and Employee Name
+
+---
+
+## Python Script – `BA.py`
+
+The Python script performs the following tasks:
+
+- Loads the original retail dataset from Excel
+- Handles missing values and ensures proper data types
+- Creates new columns:
+  - `Total_Time`: Sum of processing and wait time
+  - `Is_Efficient`: Logical column indicating if the total time is within an acceptable threshold
+- Exports a cleaned version of the dataset for use in Power BI
 
 ---
 
 ## Files Included
 
-| File Name | Description |
-|-----------|-------------|
-| `BA.py` | Python script used for data preprocessing  
-| `Retail_Store_Operational_Data.xlsx` | Original dataset  
-| `Cleaned_Retail_Operational_Data.xlsx` | Cleaned and processed dataset  
-| `Operational_Efficiency_Dashboard_Retail.pbix` | Power BI dashboard file  
-| `PDF of the dashboard.pdf` | Static exported version of the dashboard  
+| File Name                               | Description                                               |
+|----------------------------------------|-----------------------------------------------------------|
+| `BA.py`                                | Python script for data preprocessing                      |
+| `Retail_Store_Operational_Data.xlsx`   | Raw dataset                                               |
+| `Cleaned_Retail_Operational_Data.xlsx` | Cleaned dataset ready for visualization                   |
+| `Operational_Efficiency_Dashboard_Retail.pbix` | Power BI dashboard file                            |
+| `PDF of the dashboard.pdf`             | Exported version of the dashboard                         |
+| `requirements.txt`                     | Required Python packages (`pandas`, `openpyxl`)           |
 
 ---
 
-## Summary
+## Business Impact
 
-This project demonstrates the ability to derive insights from raw data using Python and present those insights effectively through a clean, functional Power BI dashboard. It reflects strong foundational skills in business analytics, operational analysis, and data visualization.
+This dashboard enables retail operations teams to:
+
+- Pinpoint inefficiencies in employee workflows
+- Track performance trends across customer types
+- Maintain stock levels to minimize fulfillment delays
+- Improve order accuracy and reduce operational costs
+- Focus on walk-in customer experience where waiting time is a key concern
+
+---
+
+## Project Outcomes
+
+- Created a clean, business-ready dashboard with real-time filtering options
+- Demonstrated the use of Python and Power BI together in an analytics pipeline
+- Built a replicable model for analyzing operational metrics in retail environments
+
+
+
