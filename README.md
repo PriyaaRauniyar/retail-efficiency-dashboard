@@ -14,7 +14,13 @@ This project focuses on analyzing and improving operational performance in a ret
 - GitHub
 
 ---
+## Dashboard Preview
 
+Below is a snapshot of the final Power BI dashboard highlighting KPIs, employee performance, order accuracy, and stock availability.
+
+![Dashboard Screenshot](dashboard_screenshot.png)
+
+---
 ## Dashboard Features
 
 The Power BI dashboard includes the following components:
